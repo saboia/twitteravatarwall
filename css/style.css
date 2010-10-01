@@ -34,6 +34,16 @@ body{
 	word-warp: break-word;
 	z-index: 1;
 	
+	-moz-border-radius: 5px;
+	-border-radius: 5px;
+}
 
+.tweet .text-left{
+	float: left;
+	right: 99px;
+}
 
+.tweet .text-right{
+	float: right;
+	right: 99px;
 }
