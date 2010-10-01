@@ -14,6 +14,16 @@ $(function(){
 			}
 	);
 	
+	$(".tweet .avatar").live("mouseover mouseout", function(event){
+		if(event.type == "mouseover"){
+			$(this).parent().find(".text").fadeIn("slow").end().addClass("shadow");
+		}
+		
+		if(event.type == "mouseover"){
+			$(this).parent().find(".text").fadeOut("slow").end().removeClass("shadow");
+		}
+	});
+	
 	function formattedTweet(index, item){
 		
 		var tweet = $("<div>", {"id": item.id, "class": "tweet"})
