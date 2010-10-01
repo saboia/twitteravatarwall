@@ -63,3 +63,7 @@ body{
 }
 
 /*clearfix*/
+
+.clearfix{
+	display: inline-block;
+}
