@@ -9,7 +9,7 @@ $(function(){
 			},
 			function(data, textStatus){
 				$.each(data.results, function(index, item){
-					$("#container").append()
+					$("#container").append(formattedTweet(index,item));
 				})
 			}
 	);
