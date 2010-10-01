@@ -5,7 +5,7 @@ $(function(){
 				"q":"carol",
 				"rpp": "100",
 				"lang": "pt-BR",
-				"result_type" : "mixed"
+				"result_type" : "mixed",
 			},
 			function(data, textStatus){
 				$.each(data.results, function(index, item){
