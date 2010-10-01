@@ -7,7 +7,9 @@ $(function(){
 				"lang": "pt-BR",
 				"result_type" : "mixed"
 			},
-			callback
+			callback(data, textStatus){
+				console.log(data);
+			}
 	);
 	
 })
