@@ -46,4 +46,12 @@ body{
 .tweet .text-right{
 	float: right;
 	right: 99px;
+}	
+
+.tweet .text-bottom{
+	bottom: 5px;	
+}
+
+.shadow{
+	z-index: 1000000;
 }
