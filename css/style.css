@@ -1,0 +1,39 @@
+body{
+	background-color: #999;
+	margin: 0px; 
+}
+
+#container{
+	margin: 0 auto;
+	width: 960px;
+}
+
+.tweet{
+	float:left;
+	position: relative;
+}
+
+.tweet .avatar{
+	float:left;
+	height: 94px;
+	opacity: 0.25;
+	width: 94px;
+}
+
+.tweet .text{
+	background: rbga(255,255,255,0.85);
+	display: none;
+	font: 15px Halvetica, Arial, Sans-serif;
+	height: 200px;
+	margin: 0px;
+	padding: 20px;
+	position: absolute;
+	width: 200px;
+	position: absolute;
+	width: 200px;
+	word-warp: break-word;
+	z-index: 1;
+	
+
+
+}
