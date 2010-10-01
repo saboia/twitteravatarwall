@@ -14,4 +14,7 @@ $(function(){
 			}
 	);
 	
+	function formattedTweet(index, item){
+		var tweet = $("<div>", {"id": item.id, "class": "tweet"})
+	}
 })
