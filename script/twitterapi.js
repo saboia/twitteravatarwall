@@ -2,7 +2,7 @@ $(function(){
 	$.getJSON(
 			"http://search.twitter.com/search.json?callback=?",
 			{
-				"q":"carol",
+				"q":"gloss",
 				"rpp": "100",
 				"lang": "pt-BR",
 				"result_type" : "mixed",
