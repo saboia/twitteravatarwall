@@ -8,7 +8,9 @@ $(function(){
 				"result_type" : "mixed"
 			},
 			function(data, textStatus){
-				console.log(data);
+				$.each(data.results, function(index, item){
+					$("#container").append()
+				})
 			}
 	);
 	
