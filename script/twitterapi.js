@@ -1,28 +1,37 @@
 $(function(){
-	$.getJSON(
-			"http://search.twitter.com/search.json?callback=?",
-			{
-				"q":"gloss",
-				"rpp": "100",
-				"lang": "pt-BR",
-				"result_type" : "mixed",
-			},
-			function(data, textStatus){
-				$.each(data.results, function(index, item){
-					$("#container").append(formattedTweet(index,item));
-				})
-			}
-	);
+	busca();
 	
-	$(".tweet .avatar").live("mouseover mouseout", function(event){
-		if(event.type == "mouseover"){
-			$(this).parent().find(".text").fadeIn("slow").end().addClass("shadow");
-		}
+	window.setInterval(busca, 30000);
+	
+	function busca(){
+		$.getJSON(
+				"http://search.twitter.com/search.json?callback=?",
+				{
+					"q":"gloss",
+					"rpp": "100",
+					"lang": "pt-BR",
+					"result_type" : "mixed",
+				},
+				function(data, textStatus){
+					$.each(data.results, function(index, item){
+						$("#container").append(formattedTweet(index,item));
+					})
+				}
+		);
 		
-		if(event.type == "mouseover"){
-			$(this).parent().find(".text").fadeOut("slow").end().removeClass("shadow");
-		}
-	});
+		$(".tweet .avatar").live("mouseover mouseout", function(event){
+			if(event.type == "mouseover"){
+				$(this).parent().find(".text").fadeIn("slow").end().addClass("shadow");
+			}
+			
+			if(event.type == "mouseover"){
+				$(this).parent().find(".text").fadeOut("slow").end().removeClass("shadow");
+			}
+		});
+	}
+	
+	
+	
 	
 	function formattedTweet(index, item){
 		
