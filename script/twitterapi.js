@@ -7,7 +7,7 @@ $(function(){
 				"lang": "pt-BR",
 				"result_type" : "mixed"
 			},
-			callback(data, textStatus){
+			function(data, textStatus){
 				console.log(data);
 			}
 	);
