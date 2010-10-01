@@ -19,7 +19,11 @@ $(function(){
 		var tweet = $("<div>", {"id": item.id, "class": "tweet"})
 		var avatar = $("<img>", {"src": item.profile_image_url, "class": "avatar"});
 		
-		tweet.append(avatar);
+		var text = $("<p>", {"class": "text"});
+		
+		text.html("<strong>" + item.from_user + ":<strong> " + item.text);
+		
+		tweet.append(avatar).append(text);
 		
 		return tweet;
 	}
