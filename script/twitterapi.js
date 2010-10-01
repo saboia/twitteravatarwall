@@ -23,6 +23,10 @@ $(function(){
 		
 		text.html("<strong>" + item.from_user + ":<strong> " + item.text);
 		
+		/[5-9]{1}$/.test(index.toString()) ? text.addClass("text-right"): text.addClass("text-left");
+		
+		(/^[5-9]{1}/.test(index.toString()) && index.toString() == 2 ) ? text.addClass("text-bottom"): false;
+		
 		tweet.append(avatar).append(text);
 		
 		return tweet;
