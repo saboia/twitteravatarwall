@@ -1,7 +1,7 @@
 $(function(){
 	busca();
 	
-	window.setInterval(busca, 30000);
+	//window.setInterval(busca, 30000);
 	
 	function busca(){
 		$.getJSON(
