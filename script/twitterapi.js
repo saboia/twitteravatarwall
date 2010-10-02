@@ -24,9 +24,11 @@ $(function(){
 				$(this).parent().find(".text").fadeIn("slow").end().addClass("shadow");
 			}
 			
-			if(event.type == "mouseover"){
+			if(event.type == "mouseout"){
 				$(this).parent().find(".text").fadeOut("slow").end().removeClass("shadow");
 			}
+			
+			
 		});
 	}
 	
