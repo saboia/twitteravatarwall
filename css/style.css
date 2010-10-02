@@ -21,7 +21,7 @@ body{
 }
 
 .tweet .text{
-	background: rbga(255,255,255,0.85);
+	background: #FFFFFF;
 	display: none;
 	font: 15px Halvetica, Arial, Sans-serif;
 	height: 200px;
