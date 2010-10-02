@@ -40,7 +40,7 @@ body{
 
 .tweet .text-left{
 	float: left;
-	right: 99px;
+	left: 99px;
 }
 
 .tweet .text-right{
